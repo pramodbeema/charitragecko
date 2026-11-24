@@ -1,0 +1,7 @@
+# Packaging and OS artifacts
+*.zip
+*.xpi
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "CHARITRA",
+  "short_name": "CHARITRA",
+  "version": "1.0.0",
+  "description": "Private history manager with Metro UI. Block domains from browser history and vault them with password protection.",
+  "author": "Pramod Beema",
+  "developer": {
+    "name": "Pramod Beema",
+    "url": "https://github.com/pramodbeema/charitragecko"
+  },
+  "homepage_url": "https://github.com/pramodbeema/charitragecko",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "charitra@pramodbeema",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "permissions": [
+    "history",
+    "storage",
+    "tabs",
+    "webNavigation",
+    "alarms"
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "action": {
+    "default_popup": "pages/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "24": "icons/icon24.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "CHARITRA"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "24": "icons/icon24.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "pages/vault.html",
+        "pages/welcome.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
